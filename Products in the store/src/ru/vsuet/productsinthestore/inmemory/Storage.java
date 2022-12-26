@@ -27,14 +27,14 @@ public class Storage {
         Tovar tovar= new Tovar("milk","56p");
         Tovar tovar1=new Tovar("cheez","100p");
 
-        Otdel otdel=new Otdel("Dairy Department",LocalTime.parse("12:00"));
+        Otdel otdel=new Otdel("Dairy Department",12);
         otdel.addTovar(tovar);
         otdel.addTovar(tovar1);
 
         Tovar tovar2=new Tovar("tea","120p");
         Tovar tovar3=new Tovar("coffe","220p");
 
-        Otdel otdel1=new Otdel("Grocery",LocalTime.parse("14:00"));
+        Otdel otdel1=new Otdel("Grocery",14);
         otdel1.addTovar(tovar2);
         otdel1.addTovar(tovar3);
 

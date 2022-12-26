@@ -1,15 +1,14 @@
 package ru.vsuet.productsinthestore.domain;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Otdel {
     private String nameot;
-    private LocalTime time;
+    private Integer time;
     private List<Tovar> tovars;
 
-    public Otdel(String nameot,LocalTime time){
+    public Otdel(String nameot, Integer time){
         this.nameot=nameot;
         this.time=time;
         this.tovars= new ArrayList<>();
@@ -24,7 +23,7 @@ public class Otdel {
         return nameot;
     }
 
-    public LocalTime getTime(){
+    public Integer getTime(){
         return time;
     }
     public List<Tovar> getTovars(){
